@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".AppleList">
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/card_view"
+        android:layout_width="400dp"
+        android:layout_height="177dp"
+        android:layout_margin="5dp"
+        app:cardCornerRadius="5dp"
+        app:cardPreventCornerOverlap="false"
+        app:cardUseCompatPadding="true">
+
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="horizontal">
+
+    <ImageView
+        android:id="@+id/android_gridview_image"
+        android:layout_width="200dp"
+        android:layout_height="match_parent"
+        android:scaleType="centerCrop"
+        android:src="@drawable/apple" />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="129dp"
+            android:layout_height="48dp"
+            android:gravity="center"
+            android:text="name : apple"></TextView>
+
+        <TextView
+            android:layout_width="129dp"
+            android:layout_height="50dp"
+            android:gravity="center"
+            android:text="price : 70 kg"></TextView>
+
+    </LinearLayout>
+</LinearLayout>
+  </androidx.cardview.widget.CardView>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        >
+
+        <LinearLayout
+            android:id="@+id/cart_plus_minus_layout"
+            android:layout_width="429dp"
+            android:layout_height="111dp"
+            android:layout_below="@+id/product_cart_code"
+            android:layout_alignParentRight="true"
+            android:layout_gravity="center"
+            android:layout_margin="10dp"
+            android:background=""
+            android:gravity="center"
+
+            android:orientation="horizontal">
+
+
+            <ImageView
+                android:id="@+id/cart_decrement"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="40dp"
+                android:src="@drawable/ic_minus" />
+
+            <TextView
+                android:id="@+id/cart_product_quantity_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical|center_horizontal"
+                android:layout_marginTop="40dp"
+                android:paddingLeft="15dip"
+                android:paddingRight="15dip"
+                android:text="10"
+                android:textColor="#000"
+                android:textSize="16sp"
+                android:textStyle="bold" />
+
+            <ImageView
+                android:id="@+id/cart_increment"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="40dp"
+                android:src="@drawable/ic_plus" />
+
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="92dp"
+            android:text="Add to Cart"
+            android:gravity="center"
+            android:textSize="30sp"
+            android:textStyle="bold"
+            android:background="@color/colorPrimary">
+
+        </TextView>
+
+    </LinearLayout>
+
+
+
+
+
+
+
+
+</LinearLayout>
